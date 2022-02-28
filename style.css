@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REUSABLE *************************************************************************************/
+
+.row{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.heading-main h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    }
+    
+.heading-main h2::after{
+        content: "";
+        display: block;
+        width: 200px;
+        border-bottom: 3px solid black;
+        margin: 5px auto;
+    }
+
+/* HEADER **************************************************************************************/
+
+header{
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(105, 63, 63, 0.75)), url("img/praha.jpg");
+    background-size: cover;
+    height: 100vh;
+  
+}
+
+#logo img{
+    width: 300px;
+    position: absolute;
+    top: 5%;
+}
+
+nav ul{
+    float: right;
+    margin-top: 52px;
+}
+
+nav ul li{
+    display: inline-block;
+    color: snow;
+    margin-left: 20px;
+
+}
+
+nav ul li a:link,
+nav ul li a:visited{
+    color: snow;
+    font-size: 30px;
+    text-decoration: none; 
+    padding: 5px;
+    border-bottom: 2px solid transparent; 
+}
+
+
+nav ul li a:hover,
+nav ul li a:active{
+    transition: border-bottom 0.8s;
+    border-bottom: 1px solid orange;
+    border-radius: 8px;
+    color: orange;
+    background: black;
+    
+    /* text-decoration: underline; */
+
+}
+
+
+.headertext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%,-60%);
+}
+
+.headertext h1{
+    color: snow;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    word-spacing: 8px;
+}
+
+.btn{
+    display: inline-block;
+    color: snow;
+    text-decoration: none;
+    font-size: 25px;
+    border: 1px solid orange;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+
+.btn-full:link,
+.btn-full:visited{
+    background:rgba(231, 68, 32, 0.5)
+}
+
+
+.btn-full:hover,
+.btn-full:active{
+    transition: background 0.6s;
+    background:orange;
+    border: 1px solid orange;
+    /* width: 150px; */
+    /* height: 40px; */
+}
+
+.btn-empty:link,
+.btn-empty:visited{
+    margin-left: 15px;
+    background: transparent;
+    /* background: rgb(134, 74, 74); */
+}
+
+.btn-empty:hover,
+.btn-empty:active{
+    transition: background 0.6s;
+    background: orange;
+
+}
+
+
+
+
+
+/* MAIN **************************************************************************************/
+
+
+
+.aboutmain h2:before{
+    content: "aa";
+}
+
+.photo-example img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px grey;
+}
+
+
+
+/* text o cinnosti******************************************************************* */
+.textonas{
+    text-align: justify;
+}
+
+.textonas img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px grey;
+}
+
+.textocinnosti img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px grey;
+}
+
+.nasebody{
+    margin-bottom: 20px;
+}
+.nasebody div{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 9px;
+    float: left;
+    background: grey;
+}
+
+.nasebody p{
+    margin-left: 60px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* REFERENCE************************************************************************* */
+
+.reference{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/praha.jpg);
+    
+
+}
+
+.reference h2{
+    color: snow;
+    padding-top: 10px;
+
+}
+
+.reference h2:after{
+    border-bottom: 3px solid snow;
+}
+
+.one-reference{
+    color: snow;
+    font-size: 20px;
+
+}
+
+.one-reference p{
+    font-style: italic;
+}
+
+.photo-name{
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+}
+
+.photo-name p{
+    padding: 10px;
+    margin-left: 55px;
+    font-style: normal;
+    
+
+}
+
+.photo-name img{
+    width: 60px;
+    border-radius: 50%;
+    float: left;
+}
+
+/* ˇFOTOGALERIE********************************************************************** */
+
+.photo-segment li{
+    list-style-type: none;
+    background: black;
+    overflow: hidden;
+    height: 350px;
+    
+}
+
+.photo-segment img{
+    width: 100%;
+    height: 350px;
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+
+.photo-segment img:hover{
+    transition: transform 0.4s, opacity 0.4s;
+    transform: scale(1);
+    opacity: 1;
+
+
+}
+
+
+
+
+
+
+/* STOP FLOAT************************************************************************ */
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
